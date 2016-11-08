@@ -1,0 +1,83 @@
+@charset "utf-8";
+@import "reset";
+@import "variable";
+
+header {
+  height: 60px;
+  background-color: $redColor;
+  h1 {
+    @include fontSize(30px);
+    @include fontCenter;
+  }
+  p {
+    @include fontSize(20px);
+    @include fontCenter;
+    margin-left: 260px;
+  }
+}
+
+.mainBody {
+  .loginPanal {
+    width: 380px;
+    margin: 50px auto;
+    border: 2px solid darkgrey;
+    background-color: #fff;
+    .panalHead {
+      height: 40px;
+      line-height: 40px;
+      background: linear-gradient(to top,#00B7FF, #fff);
+      @include fontCenter;
+      letter-spacing: 10px;
+      color: darkviolet;
+    }
+    .panalBody {
+      label {
+        display: block;
+        height: 30px;
+        line-height: 30px;
+        margin-left: 20px;
+        input {
+          float: right;
+          margin-right: 40px;
+          margin-top: 5px;
+        }
+        &:last-child{
+          input {
+            width: 100px;
+          }
+        }
+        &:first-child{
+          margin-top: 30px;
+        }
+      }
+      button {
+        display: block;
+        margin: 30px auto;
+        line-height: 30px;
+        @include fontSize(20px);
+        background-color: coral;
+        color: #fff;
+        width: 100px;
+        letter-spacing: 5px;
+        cursor: pointer;
+      }
+      a {
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        color: #000;
+        @include fontSize(16px);
+        margin-left: 30px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        &:hover {
+          color: #f00;
+        }
+        &:last-child {
+          margin-left: 110px;
+        }
+      }
+    }
+  }
+}

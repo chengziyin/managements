@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/index.css')
+  body
+    block content
+      header
+        h1.headTitle  #{title}
+        p Welcome to #{title}
+      .mainBody
+        .loginPanal
+          .panalHead
+            h2 LOGIN
+          .panalBody
+            label User Name
+              input(type='text')
+            label User Password
+              input(type='password')
+            label Identifying Code
+              input
+            button logIn
+            a.signUp Sign Up
+            a.forget Forget Password
+

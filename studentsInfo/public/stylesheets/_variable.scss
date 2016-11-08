@@ -1,0 +1,12 @@
+$redColor:red;
+
+
+@mixin fontCenter{
+  text-align: center;
+}
+
+@mixin fontSize($size:10px) {
+  font-size: $size;
+}
+
+
